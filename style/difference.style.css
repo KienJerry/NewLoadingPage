@@ -19,14 +19,8 @@
   font-size: 48rem;
   color: #5a9b37;
 }
-
-.panda-loyalty-difference > .group-difference-category {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
 .group-difference-category > .bg-img-difference {
-  margin-top: 78rem;
+  margin-top: 0rem;
 }
 .bg-img-difference > .img-iphone {
   position: absolute;
@@ -34,10 +28,14 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  width: 100%;
   height: 700rem;
   object-fit: contain;
   margin-top: -70rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.bg-img-difference > .img-iphone:hover {
+  transform: scale(1.05);
 }
 .bg-img-difference > .img-ellipse {
   position: absolute;
@@ -50,11 +48,69 @@
   width: 560rem;
   height: 560rem;
   object-fit: contain;
+  border-radius: 50%;
 }
 @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
+}
+.group-difference-category > .group-list-items-difference-category {
+  display: flex;
+  margin-top: 78rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16rem;
+  color: #575757;
+  gap: 250rem;
+  margin-left: -29rem;
+}
+.box-difference-category > .parent-difference-category {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 1s all ease-in-out;
+}
+.box-difference-category > .parent-difference-category.padding-right {
+  padding-right: 70rem;
+}
+.box-difference-category > .parent-difference-category.padding-left {
+  padding-left: 70rem;
+}
+.box-difference-category .parent-difference-category.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.box-difference-category > .parent-difference-category.active:hover {
+  transform: scale(1.05);
+}
+.parent-difference-category .content-difference-category {
+  font-weight: 500;
+  font-size: 16rem;
+  color: #575757;
+}
+.content-difference-category > h3 {
+  font-weight: 700;
+  font-size: 20rem;
+  color: #252525;
+  margin: 0;
+}
+.content-difference-category > p {
+  margin: 5rem 0 0 0;
+}
+.content-difference-category.right {
+  text-align: right;
+}
+.parent-difference-category > img {
+  width: 180rem;
+  height: 180rem;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1024px) {
