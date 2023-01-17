@@ -1,0 +1,115 @@
+.panda-loyalty-platform {
+  background: #fefbcf;
+  position: relative;
+  padding: 80rem 32rem;
+  margin-top: 50rem;
+}
+.panda-loyalty-platform > .header-panda-loyalty-platform {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  row-gap: 12rem;
+  text-align: center;
+}
+.header-panda-loyalty-platform h2 {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+.header-panda-loyalty-platform p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+}
+.panda-loyalty-platform > .group-plugin-platform {
+  margin-top: 53rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 24rem;
+}
+.group-plugin-platform > .box-plugin-platform {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: all 1s ease-in-out;
+  flex: 1;
+  width: 100%;
+}
+.group-plugin-platform .box-plugin-platform.active {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.box-plugin-platform img {
+  height: 500rem;
+  object-fit: contain;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+.box-plugin-platform img:hover {
+  transform: scale(1.05);
+}
+.box-plugin-platform h3 {
+  font-weight: 700;
+  font-size: 20rem;
+  text-align: center;
+  color: #000000;
+}
+.box-plugin-platform p {
+  margin-top: 15rem;
+  font-weight: 400;
+  font-size: 20rem;
+  text-align: center;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-platform {
+    padding: 44rem 56rem;
+  }
+  .header-panda-loyalty-platform h2 {
+    font-size: 36rem;
+  }
+  .header-panda-loyalty-platform p {
+    font-size: 14rem;
+  }
+  .header-panda-loyalty-platform br {
+    display: none;
+  }
+  .panda-loyalty-platform > .group-plugin-platform {
+    overflow-y: auto;
+  }
+  .box-plugin-platform h3 {
+    font-size: 18rem;
+  }
+  .box-plugin-platform p {
+    font-size: 16rem;
+  }
+  .box-plugin-platform img {
+    height: 361rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-platform {
+    padding: 44rem 20rem;
+  }
+  .header-panda-loyalty-platform h2 {
+    font-size: 20rem;
+  }
+  .box-plugin-platform h3 {
+    font-size: 16rem;
+  }
+  .box-plugin-platform p {
+    font-size: 14rem;
+  }
+  .box-plugin-platform img {
+    height: 200rem;
+  }
+  .panda-loyalty-platform > .group-plugin-platform {
+    gap: 12rem;
+  }
+}
