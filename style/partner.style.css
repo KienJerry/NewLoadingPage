@@ -1,0 +1,88 @@
+.panda-loyalty-partner {
+  position: relative;
+  padding: 80rem 0;
+}
+.panda-loyalty-partner > .header-panda-loyalty-partner {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  row-gap: 12rem;
+  text-align: center;
+}
+.header-panda-loyalty-partner h2 {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+.header-panda-loyalty-partner p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+}
+.panda-loyalty-partner > .group-loyalty-partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36rem;
+  padding: 0 207rem;
+}
+.group-loyalty-partner .image-loyalty-partner {
+  width: 100rem;
+  height: 100rem;
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: all 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-loyalty-partner .image-loyalty-partner.active {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.image-loyalty-partner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-partner {
+    padding: 44rem 56rem;
+  }
+  .header-panda-loyalty-partner h2 {
+    font-size: 36rem;
+  }
+  .header-panda-loyalty-partner p {
+    font-size: 16rem;
+  }
+  .header-panda-loyalty-partner br {
+    display: none;
+  }
+  .panda-loyalty-partner > .group-loyalty-partner {
+    padding: 0;
+  }
+  .group-loyalty-partner .image-loyalty-partner {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-partner {
+    padding: 44rem 20rem;
+  }
+  .header-panda-loyalty-partner h2 {
+    font-size: 20rem;
+  }
+  .panda-loyalty-partner > .group-loyalty-partner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24rem;
+  }
+  .group-loyalty-partner .image-loyalty-partner {
+    width: 60rem;
+    height: 60rem;
+    flex: none;
+  }
+}

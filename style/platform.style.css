@@ -44,7 +44,7 @@
   transform: translateY(0rem);
 }
 .box-plugin-platform img {
-  height: 500rem;
+  height: 600rem;
   object-fit: contain;
   transition: transform 0.8s;
   cursor: pointer;
