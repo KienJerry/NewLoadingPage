@@ -1,0 +1,88 @@
+.panda-loyalty-difference {
+  position: relative;
+  padding: 80rem 100rem;
+}
+.panda-loyalty-difference > .header-panda-loyalty-difference {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  row-gap: 12rem;
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+  text-align: center;
+}
+.header-panda-loyalty-difference h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+
+.panda-loyalty-difference > .group-difference-category {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.group-difference-category > .bg-img-difference {
+  margin-top: 78rem;
+}
+.bg-img-difference > .img-iphone {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 700rem;
+  object-fit: contain;
+  margin-top: -70rem;
+}
+.bg-img-difference > .img-ellipse {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  animation: rotate 30s linear infinite;
+  z-index: -1;
+  width: 560rem;
+  height: 560rem;
+  object-fit: contain;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-difference > .group-difference-category {
+    display: none;
+  }
+  .panda-loyalty-difference {
+    padding: 44rem;
+  }
+  .header-panda-loyalty-difference h2 {
+    font-size: 32rem;
+  }
+  .panda-loyalty-difference > .header-panda-loyalty-difference {
+    font-size: 16rem;
+  }
+  .panda-loyalty-difference > .header-panda-loyalty-difference br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-difference {
+    padding: 20rem;
+  }
+  .header-panda-loyalty-difference h2 {
+    font-size: 20rem;
+  }
+  .panda-loyalty-difference > .header-panda-loyalty-difference {
+    font-size: 14rem;
+  }
+}

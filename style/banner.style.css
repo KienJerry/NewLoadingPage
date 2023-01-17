@@ -12,23 +12,116 @@
   bottom: 0;
   right: 0;
   margin: 17rem 21rem;
-  transition: transform 0.5s;
-  /* transform: translateY(150rem);
+  transform: translateX(150rem);
   opacity: 0;
-  transition: 2s all ease; */
+  transition: 1s all ease;
+}
+.panda-loyaty-banner > img.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 .panda-loyaty-banner > img:hover {
-  -ms-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .panda-loyaty-banner > .group-banner-content {
   display: flex;
   padding: 10% 0 0 98rem;
   position: absolute;
+  flex-direction: column;
+  row-gap: 63rem;
+  transform: translateX(-150rem);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.panda-loyaty-banner > .group-banner-content.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 .group-banner-content h1 {
   font-weight: 900;
   font-size: 64rem;
   color: #104b0b;
+  margin: 0;
+}
+.group-banner-content span {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #2c2c2c;
+  max-width: 541rem;
+}
+.group-banner-content .btn-banner {
+  font-weight: 700;
+  font-size: 20rem;
+  color: #fff086;
+  background: #104b0b;
+  border-radius: 30rem;
+  padding: 16rem 28rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyaty-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40rem;
+    height: 100%;
+    width: 100%;
+    padding: 60rem 0;
+  }
+  .panda-loyaty-banner > img {
+    width: 512rem;
+    height: 440rem;
+    position: relative;
+    transform: translateY(-150rem);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .panda-loyaty-banner > .group-banner-content {
+    padding: 0 44rem;
+    position: relative;
+    flex-direction: column;
+    row-gap: 32rem;
+    transform: translateY(150rem);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .group-banner-content h1 {
+    font-size: 48rem;
+  }
+  .group-banner-content span {
+    font-size: 16rem;
+    max-width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyaty-banner {
+    row-gap: 24rem;
+    padding: 24rem 0;
+  }
+  .panda-loyaty-banner > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .panda-loyaty-banner > .group-banner-content {
+    padding: 0 24rem;
+    row-gap: 20rem;
+  }
+  .group-banner-content h1 {
+    font-size: 24rem;
+  }
+  .group-banner-content span {
+    font-size: 14rem;
+  }
+  .group-banner-content .btn-banner {
+    font-size: 16rem;
+    border-radius: 30rem;
+    padding: 12rem;
+  }
 }
