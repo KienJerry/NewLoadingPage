@@ -1,0 +1,107 @@
+.panda-loyalty-caseStudy {
+  position: relative;
+  padding: 0;
+}
+.panda-loyalty-caseStudy > .header-panda-loyalty-caseStudy {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  row-gap: 12rem;
+  text-align: center;
+}
+.header-panda-loyalty-caseStudy h2 {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+.header-panda-loyalty-caseStudy p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+}
+.panda-loyalty-caseStudy > .group-loyalty-casestudy {
+  padding: 36rem 100rem 80rem 100rem;
+  display: flex;
+}
+.group-loyalty-casestudy .image-case-study {
+  flex: 1;
+  width: 100%;
+  height: 389rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.group-loyalty-casestudy .image-case-study.active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.image-case-study img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.group-loyalty-casestudy .content-case-study {
+  flex: 1;
+  width: 100%;
+  padding-left: 40rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(100px);
+}
+.group-loyalty-casestudy .content-case-study.active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.content-case-study b {
+  font-weight: 900;
+  font-size: 40rem;
+  color: #474848;
+}
+.content-case-study p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+  margin-top: 12rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-caseStudy {
+    padding: 44rem 56rem;
+  }
+  .header-panda-loyalty-caseStudy h2 {
+    font-size: 36rem;
+  }
+  .header-panda-loyalty-caseStudy p {
+    font-size: 16rem;
+  }
+  .panda-loyalty-caseStudy > .group-loyalty-casestudy {
+    padding: 36rem 0 44rem 0;
+    flex-direction: column;
+  }
+  .group-loyalty-casestudy .content-case-study {
+    padding-left: 0;
+    margin-top: 40rem;
+  }
+  .content-case-study b {
+    font-size: 36rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-caseStudy {
+    padding: 44rem 20rem;
+  }
+  .header-panda-loyalty-caseStudy h2 {
+    font-size: 20rem;
+  }
+  .content-case-study b {
+    font-size: 20rem;
+  }
+  .content-case-study p {
+    font-size: 14rem;
+  }
+  .group-loyalty-casestudy .image-case-study {
+    height: 203rem;
+  }
+}

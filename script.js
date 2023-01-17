@@ -104,7 +104,6 @@ const ready = () => {
 };
 document.addEventListener("DOMContentLoaded", ready);
 
-
 window.addEventListener(
   "scroll",
   () => {
