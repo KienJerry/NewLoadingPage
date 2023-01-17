@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+html {
+  font-size: 0.06944444444vw;
+  font-style: normal;
+  font-family: "Lexend", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 0.13440860215vw;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  html {
+    font-size: 0.26666666666vw;
+  }
+}
