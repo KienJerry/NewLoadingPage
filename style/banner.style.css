@@ -16,9 +16,23 @@
   opacity: 0;
   transition: 1s all ease;
 }
-.panda-loyaty-banner > img.active{
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.panda-loyaty-banner > img.active {
   transform: translateY(0);
   opacity: 1;
+}
+.panda-loyaty-banner > img.inative {
+  animation: zoom-in-zoom-out 5s ease infinite;
 }
 .panda-loyaty-banner > img:hover {
   -ms-transform: scale(1.03);
@@ -96,7 +110,6 @@
     font-size: 16rem;
     max-width: 100%;
   }
-  
 }
 
 @media only screen and (max-width: 740px) {

@@ -1,0 +1,175 @@
+.panda-loyalty-offer {
+  padding: 80rem 100rem;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.panda-loyalty-offer > .box-card-offer {
+  background: url(../public/image/card-unoffer.svg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: 0rem 2rem 40rem rgba(0, 0, 0, 0.08);
+  width: 379rem;
+  height: 672rem;
+  border-radius: 10rem;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.panda-loyalty-offer > .box-card-offer.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.panda-loyalty-offer > .box-card-offer.inactive {
+  background-image: url(../public/image/card-offer.svg);
+}
+
+.box-card-offer > .header-box-card-offter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24rem;
+  font-weight: 500;
+  font-size: 16rem;
+  color: #575757;
+  margin-top: 32rem;
+}
+.box-card-offer > .header-box-card-offter b {
+  font-weight: 900;
+  font-size: 32rem;
+}
+.box-card-offer > .header-box-card-offter b.beginer {
+  color: #37a825;
+}
+.box-card-offer > .header-box-card-offter b.standard {
+  color: #e7a823;
+}
+.box-card-offer > .header-box-card-offter b.premium {
+  color: #5f0fc6;
+}
+.box-card-offer > .header-box-card-offter p {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #2c2c22;
+  position: relative;
+}
+.box-card-offer > .header-box-card-offter span {
+  position: absolute;
+  bottom: 0;
+  right: -45rem;
+  font-weight: 500;
+  font-size: 16rem;
+  color: #575757;
+}
+.box-card-offer > .card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 28rem;
+  margin-bottom: 41rem;
+  padding: 0 34rem;
+}
+.box-card-offer > .card-body strong {
+  font-weight: 900;
+  font-size: 20rem;
+  color: #ffffff;
+}
+.box-card-offer > .card-body .group-txt-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 11rem;
+  font-weight: 500;
+  font-size: 16rem;
+  text-align: center;
+  color: #252525;
+}
+.box-card-offer > .card-body > .btn-register-offer {
+  border: 1rem solid #5a9b37;
+  border-radius: 30rem;
+  font-weight: 700;
+  font-size: 20rem;
+  color: #5a9b37;
+  padding: 12rem 40rem;
+  cursor: pointer;
+}
+.box-card-offer > .card-body > .btn-register-offer:hover {
+  background: #5a9b37;
+  border: 1rem solid #ffffff;
+  border-radius: 30rem;
+  color: #feef85;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-offer {
+    padding: 44rem;
+    gap: 24rem;
+    overflow-x: auto;
+  }
+  .panda-loyalty-offer > .box-card-offer {
+    min-width: 362rem;
+    min-height: 461rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .box-card-offer > .header-box-card-offter b {
+    font-size: 34rem;
+  }
+  .box-card-offer > .header-box-card-offter p {
+    font-size: 39rem;
+  }
+  .box-card-offer > .header-box-card-offter {
+    row-gap: 15rem;
+  }
+  .box-card-offer > .header-box-card-offter span {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-offer {
+    padding: 44rem 20rem;
+  }
+  .panda-loyalty-offer > .box-card-offer {
+    min-width: 310rem;
+    min-height: 461rem;
+  }
+  .box-card-offer > .header-box-card-offter b {
+    font-size: 28rem;
+  }
+  .box-card-offer > .header-box-card-offter p {
+    font-size: 34rem;
+  }
+  .box-card-offer > .header-box-card-offter {
+    row-gap: 15rem;
+  }
+  .box-card-offer > .card-body {
+    row-gap: 23rem;
+    margin-bottom: 41rem;
+    padding: 0px 15rem;
+  }
+  .box-card-offer > .card-body strong {
+    font-size: 20rem;
+  }
+  .box-card-offer > .card-body .group-txt-card {
+    font-size: 15rem;
+  }
+  .box-card-offer > .card-body > .btn-register-offer {
+    font-size: 16rem;
+    padding: 6rem 34rem;
+  }
+  .box-card-offer > .header-box-card-offter span {
+    font-size: 12rem;
+  }
+}
