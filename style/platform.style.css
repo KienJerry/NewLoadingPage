@@ -80,7 +80,8 @@
     display: none;
   }
   .panda-loyalty-platform > .group-plugin-platform {
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
   .box-plugin-platform h3 {
     font-size: 18rem;

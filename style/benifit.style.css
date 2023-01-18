@@ -1,0 +1,129 @@
+.panda-loyalty-benifit {
+  display: flex;
+  position: relative;
+  gap: 37rem;
+  padding: 68rem 100rem 68rem 39rem;
+}
+.panda-loyalty-benifit > img {
+  height: 596rem;
+  object-fit: contain;
+  animation-name: benifitImg;
+  position: relative;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes benifitImg {
+  0% {
+    left: 0rem;
+    top: 0rem;
+  }
+  50% {
+    left: 0rem;
+    top: 30rem;
+  }
+  100% {
+    left: 0rem;
+    top: 0rem;
+  }
+}
+.panda-loyalty-benifit > .loyalty-benifit-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12rem;
+  flex: 1;
+}
+.panda-loyalty-benifit > .loyalty-benifit-content h2 {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+.panda-loyalty-benifit > .loyalty-benifit-content p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+}
+.loyalty-benifit-content > .group-character-benifit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32rem 8rem;
+  margin-top: 12rem;
+}
+.group-character-benifit > .box-character-benifit {
+  padding: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8rem;
+  font-weight: 500;
+  font-size: 16rem;
+  text-align: center;
+  color: #606060;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+.group-character-benifit > .box-character-benifit.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.group-character-benifit > .box-character-benifit b {
+  font-weight: 700;
+  font-size: 20rem;
+  color: #20201e;
+  margin-top: 8rem;
+}
+.group-character-benifit > .box-character-benifit img {
+  width: 60rem;
+  height: 60rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-benifit {
+    padding: 0 56rem 44rem 56rem;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 37rem;
+  }
+  .panda-loyalty-benifit > .loyalty-benifit-content h2 {
+    font-size: 36rem;
+  }
+  .panda-loyalty-benifit > .loyalty-benifit-content p {
+    font-size: 16rem;
+  }
+  .panda-loyalty-benifit > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-benifit {
+    padding: 0 20rem 44rem 20rem;
+    row-gap: 36rem;
+  }
+  .panda-loyalty-benifit > .loyalty-benifit-content h2 {
+    font-size: 20rem;
+  }
+  .panda-loyalty-benifit > .loyalty-benifit-content p {
+    font-size: 14rem;
+  }
+  .group-character-benifit > .box-character-benifit img {
+    width: 40rem;
+    height: 40rem;
+  }
+  .group-character-benifit > .box-character-benifit {
+    font-size: 14rem;
+  }
+  .group-character-benifit > .box-character-benifit b {
+    font-size: 14rem;
+  }
+  .loyalty-benifit-content > .group-character-benifit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem ;
+    margin-top: 12rem;
+  }
+}

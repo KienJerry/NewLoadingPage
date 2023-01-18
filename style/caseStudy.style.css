@@ -76,7 +76,7 @@
     font-size: 16rem;
   }
   .panda-loyalty-caseStudy > .group-loyalty-casestudy {
-    padding: 36rem 0 44rem 0;
+    padding: 36rem 0 0 0;
     flex-direction: column;
   }
   .group-loyalty-casestudy .content-case-study {
