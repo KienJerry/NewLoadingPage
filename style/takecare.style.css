@@ -1,3 +1,192 @@
-.panda-loyalty-takecare{
-    
+.panda-loyalty-takecare {
+  position: relative;
+  padding: 80rem 100rem 50rem 100rem;
+}
+.panda-loyalty-takecare > .header-panda-loyalty-takecare {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  row-gap: 12rem;
+  text-align: center;
+}
+.header-panda-loyalty-takecare h2 {
+  font-weight: 900;
+  font-size: 48rem;
+  color: #5a9b37;
+}
+.header-panda-loyalty-takecare p {
+  font-weight: 500;
+  font-size: 20rem;
+  color: #606060;
+}
+.panda-loyalty-takecare > .group-category-takecare {
+  padding: 32rem 0 67rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.group-category-takecare .box-category-takecare {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  box-shadow: 0rem 2rem 40rem rgba(0, 0, 0, 0.08);
+  border-radius: 50rem;
+  padding: 16rem 24rem;
+  color: #606060;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 20rem;
+  text-align: center;
+}
+.group-category-takecare .box-category-takecare:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+    hue-rotate(181deg) brightness(104%) contrast(101%);
+}
+.group-category-takecare .box-category-takecare img {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(7490%)
+    hue-rotate(339deg) brightness(99%) contrast(92%);
+  width: 36rem;
+  height: 36rem;
+  object-fit: contain;
+}
+.group-category-takecare .box-category-takecare:hover {
+  background: #f3da1d;
+}
+.panda-loyalty-takecare > .group-about-takecare {
+  display: flex;
+  align-items: center;
+  gap: 100rem;
+}
+.group-about-takecare > img {
+  flex: 1;
+  height: 528rem;
+  object-fit: contain;
+  animation-name: takecareImg;
+  position: relative;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes takecareImg {
+  0% {
+    left: 0rem;
+    top: 0rem;
+  }
+  50% {
+    left: 40rem;
+    top: 0rem;
+  }
+  100% {
+    left: 0rem;
+    top: 0rem;
+  }
+}
+.group-about-takecare .about-takecare-content {
+  flex: 1;
+}
+.about-takecare-content h3 {
+  font-weight: 900;
+  font-size: 32rem;
+  color: #2c2c22;
+}
+.about-takecare-content .list-descriptions-takecare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20rem;
+  margin-top: 36rem;
+  align-items: baseline;
+}
+.list-descriptions-takecare > .parent-takecare-content {
+  display: flex;
+  gap: 8rem;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #474848;
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: all 1s ease-in-out;
+  text-align: left;
+}
+.list-descriptions-takecare > .parent-takecare-content.active {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.parent-takecare-content img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+}
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-takecare {
+    padding: 44rem 56rem;
+  }
+  .header-panda-loyalty-takecare h2 {
+    font-size: 33rem;
+  }
+  .header-panda-loyalty-takecare p {
+    font-size: 14rem;
+  }
+  .header-panda-loyalty-takecare br {
+    display: none;
+  }
+  .panda-loyalty-takecare > .group-category-takecare {
+    overflow-x: auto;
+  }
+  .group-category-takecare .box-category-takecare {
+    gap: 4rem;
+    box-shadow: 0rem 2rem 40rem rgba(0, 0, 0, 0.08);
+    padding: 12rem 16rem;
+    font-size: 14rem;
+    max-height: 48rem;
+    text-align: unset;
+    min-width: 220rem;
+  }
+  .panda-loyalty-takecare > .group-category-takecare {
+    gap: 44rem;
+    justify-content: unset;
+    padding: 24rem 32rem;
+  }
+  .group-category-takecare .box-category-takecare img {
+    width: 24rem;
+    height: 24rem;
+  }
+  .panda-loyalty-takecare > .group-about-takecare {
+    gap: 32rem;
+    flex-direction: column;
+  }
+  .group-about-takecare > img {
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes takecareImg {
+    0% {
+      left: 0rem;
+      top: 0rem;
+    }
+    50% {
+      left: 20rem;
+      top: 0rem;
+    }
+    100% {
+      left: 0rem;
+      top: 0rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-takecare {
+    padding: 44rem 20rem;
+  }
+  .header-panda-loyalty-takecare h2 {
+    font-size: 17rem;
+  }
+  .about-takecare-content h3 {
+    font-size: 16rem;
+  }
+  .list-descriptions-takecare > .parent-takecare-content {
+    font-size: 12rem;
+  }
 }
