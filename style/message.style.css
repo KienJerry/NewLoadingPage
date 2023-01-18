@@ -1,0 +1,105 @@
+.panda-loyalty-message {
+  background: #fff086;
+  padding: 57rem 100rem;
+  display: flex;
+  position: relative;
+}
+.panda-loyalty-message > .group-message-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24rem;
+  font-weight: 400;
+  font-size: 16rem;
+  color: #393939;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-in-out;
+}
+.panda-loyalty-message > .group-message-content.active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.panda-loyalty-message > .group-message-content b {
+  font-weight: 900;
+  font-size: 56rem;
+  color: #153d01;
+}
+.panda-loyalty-message > .group-message-content .btn-message {
+  background: #153d01;
+  border-radius: 30rem;
+  font-weight: 600;
+  font-size: 20rem;
+  color: #fff086;
+  cursor: pointer;
+  padding: 16rem 28rem;
+  width: fit-content;
+}
+.panda-loyalty-message > .group-message-content .btn-message:hover {
+  background: #113000;
+}
+.panda-loyalty-message > .group-message-image {
+  background: url(../public/image/bg-ellipse-circle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-in-out;
+  position: absolute;
+  right: 30rem;
+  bottom: 0;
+}
+.panda-loyalty-message > .group-message-image.active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.panda-loyalty-message > .group-message-image img {
+  width: 471rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-message {
+    padding: 44rem 44rem 350rem 44rem;
+    flex-direction: column;
+  }
+  .panda-loyalty-message > .group-message-content {
+    width: 100%;
+  }
+  .panda-loyalty-message > .group-message-content b {
+    font-size: 41rem;
+  }
+  .panda-loyalty-message > .group-message-image img {
+    width: 383rem;
+  }
+  .panda-loyalty-message > .group-message-image {
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .panda-loyalty-message {
+    padding: 44rem 20rem 230rem 20rem;
+    flex-direction: column;
+  }
+  .panda-loyalty-message > .group-message-content b {
+    font-size: 20rem;
+  }
+  .panda-loyalty-message > .group-message-content {
+    font-size: 14rem;
+  }
+  .panda-loyalty-message > .group-message-content .btn-message {
+    font-size: 13rem;
+    padding: 8rem 14rem;
+  }
+  .panda-loyalty-message > .group-message-image img {
+    width: 253rem;
+  }
+  .panda-loyalty-message > .group-message-image {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
