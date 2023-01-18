@@ -17,6 +17,9 @@ const LIST_DATA = [
   TITLE_PEN,
   DIFFERENCE_CATEGORY,
 ];
+
+var itemMenu = document.getElementById("itemMenu");
+
 const loadSectionId = (id, element, dataType) => {
   document.getElementById(id).classList.add("active");
   element.removeAttribute(dataType);
@@ -114,3 +117,50 @@ window.addEventListener(
   },
   false
 );
+
+window.smoothScroll = function (target) {
+  var scrollContainer = target;
+  do {
+    scrollContainer = scrollContainer.parentNode;
+    if (!scrollContainer) return;
+    scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  var targetY = 0;
+  do {
+    if (target == scrollContainer) break;
+    targetY += target.offsetTop;
+  } while ((target = target.offsetParent));
+
+  scroll = function (c, a, b, i) {
+    i++;
+    if (i > 30) return;
+    c.scrollTop = a + ((b - a) / 30) * i - itemMenu.offsetHeight;
+    setTimeout(function () {
+      scroll(c, a, b, i);
+    }, 20);
+  };
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+};
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 830 && itemMenu) {
+    itemMenu.style.background = "#ffef86";
+    itemMenu.style.padding = "6px 100px";
+    itemMenu.style.maxHeight = "70px";
+  } else {
+    itemMenu.style.background = "transparent";
+  }
+});
+
+const menuItems = document.querySelectorAll(".menuItem");
+
+menuItems.forEach(function (e) {
+  e?.addEventListener("click", () => {
+    smoothScroll(document.getElementById(e?.dataset.redirect));
+    menuItems.forEach(function (element) {
+      element.classList.remove("active");
+    });
+    e.classList.add("active");
+  });
+});

@@ -10,6 +10,18 @@
 </head>
 
 <body>
+  <!-- Header -->
+  <div class="panda-loyalty-header" id="itemMenu">
+    <img src="./public/icon/logo-panda.svg" alt="panda icon">
+    <div class="item-menu-header" id="menuItem">
+      <p data-redirect="difference" class="menuItem active">TÍNH NĂNG</p>
+      <p data-redirect="caseStudy" class="menuItem">CASE STUDY</p>
+      <p data-redirect="IDbenefit" class="menuItem">LỢI ÍCH</p>
+      <p data-redirect="IDpriceList" class="menuItem">BẢNG GIÁ</p>
+      <p data-redirect="IDcontact" class="menuItem">LIÊN Hệ</p>
+    </div>
+  </div>
+
   <!-- Banner -->
   <div section-banner class="panda-loyaty-banner">
     <img class="inative" id="panda-loyalty-banner" src="./public/image/img-banner.png" alt="image banner" />
@@ -27,7 +39,7 @@
   </div>
 
   <!-- Difference -->
-  <div class="panda-loyalty-difference">
+  <div id="difference" class="panda-loyalty-difference">
     <div class="header-panda-loyalty-difference">
       <h2>Tính năng nào làm chúng tôi khác biệt?</h2>
       <p>
@@ -192,7 +204,7 @@
   </div>
 
   <!-- caseStudy -->
-  <div class="panda-loyalty-caseStudy">
+  <div id="caseStudy" class="panda-loyalty-caseStudy">
     <div class="header-panda-loyalty-caseStudy">
       <h2>Case Study nổi bật</h2>
       <p>Phần mềm tích đểm chăm sóc khách hàng Panda Loyalty tại công ty AEGONA có nhiều ưu điểm,<br> đặc biệt dễ sử
@@ -210,7 +222,7 @@
   </div>
 
   <!-- benifit -->
-  <div class="panda-loyalty-benifit">
+  <div id="IDbenefit" class="panda-loyalty-benifit">
     <img src="./public/image/img-benifit.png" alt="benifit">
     <div class="loyalty-benifit-content">
       <h2>Lợi ích của nền tảng <br>
@@ -300,7 +312,7 @@
   </div>
 
   <!-- offer -->
-  <div class="panda-loyalty-offer">
+  <div id="IDpriceList" class="panda-loyalty-offer">
     <div box-card-offer class="box-card-offer">
       <div class="header-box-card-offter">
         <b class="beginer">Beginer</b>
@@ -373,7 +385,7 @@
   </div>
 
   <!-- message -->
-  <div section-message class="panda-loyalty-message">
+  <div id="IDcontact" section-message class="panda-loyalty-message">
     <div id="group-message-content" class="group-message-content">
       <b>Bạn muốn gửi tin nhắn thông báo trực tiếp đến khách hàng?</b>
       <p>Các chiến dịch Marketing SMS, Email Marketing hay tin nhắn Zalo được tích hợp dễ dàng hơn bao giờ hết nhờ
@@ -383,6 +395,66 @@
     </div>
     <div id="group-message-image" class="group-message-image">
       <img src="./public/image/mobile-messenger.png" alt="messenger mobile" />
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div class="panda-loyalty-contact">
+    <div class="group-contact-content">
+      <h2>Gửi thắc mắc <span>của bạn</span></h2>
+      <p>Cám ơn bạn đã quan tâm đến giải pháp tích điểm dựa trên nền tảng Pandapoint Loyalty được phát triển bởi Aegona.
+        Dưới đây là một số gợi ý các câu hỏi mà chúng tôi thường nhận được khi khách hàng tìm hiểu về giải pháp này. Bạn
+        có thể tham khảo trước khi đặt ra các câu hỏi cho đội ngũ tư vấn của Aegona nhé:</p>
+      <div class="title-contact-list">
+        <div parent-title-pen class="parent-title-pen">
+          <img src="./public/icon/ic-pen.svg" alt="icon pen">
+          <span>Tôi có thể vừa triển khai trên app mobile và vừa triển khai trên website có được không?</span>
+        </div>
+        <div parent-title-pen class="parent-title-pen">
+          <img src="./public/icon/ic-pen.svg" alt="icon pen">
+          <span>Nền tảng ứng dụng tích điểm Pandapoint có gì khác biệt so với các nền tảng khác?</span>
+        </div>
+        <div parent-title-pen class="parent-title-pen">
+          <img src="./public/icon/ic-pen.svg" alt="icon pen">
+          <span>Tôi làm về sản xuất phân phối hàng hóa thì ứng dụng nền tảng tích điểm Pandapoint cho đại lý, hoặc có
+            nhiều chi nhánh có được không?</span>
+        </div>
+      </div>
+    </div>
+    <div class="group-contact-form">
+      <p>Nhập thông tin bạn cần tư vấn, chúng tôi luon sẵn sàng hỗ trợ</p>
+      <form>
+        <div class="form-control-contact">
+          <label for="name">Họ tên</label>
+          <input id="name" type="text" placeholder="Nhập tên">
+        </div>
+        <div class="form-control-contact">
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Nhập email">
+        </div>
+        <div class="form-control-contact">
+          <label for="phone">Số điện thoại</label>
+          <input id="phone" type="text" placeholder="Nhập số điện thoại">
+        </div>
+        <div class="form-control-contact">
+          <label for="website">Website của bạn</label>
+          <input id="website" type="text" placeholder="Nhập website">
+        </div>
+        <div class="form-control-contact">
+          <label for="descriptions">Thông tin cần tư vấn</label>
+          <textarea id="descriptions" placeholder="Nhập nội dung"></textarea>
+        </div>
+      </form>
+      <div class="btn-send">GỬI TIN</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="panda-loyalty-footer">
+    <p>Copyright © AEGONA - Chuyển đổi số 365</p>
+    <div class="wrapper-ic">
+      <img src="./public/icon/Facebook.svg" alt="Facebook">
+      <img src="./public/icon/linkedin.svg" alt="linkedin">
     </div>
   </div>
 </body>

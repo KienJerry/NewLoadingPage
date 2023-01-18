@@ -1,0 +1,37 @@
+.panda-loyalty-footer {
+  background: #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 100rem;
+}
+.panda-loyalty-footer > p {
+  font-weight: 500;
+  font-size: 14rem;
+  color: #dbdbdb;
+}
+.panda-loyalty-footer > .wrapper-ic {
+  display: flex;
+  gap: 29rem;
+}
+.panda-loyalty-footer > .wrapper-ic img {
+  width: 32rem;
+  height: 32rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-footer {
+    padding: 4rem 12rem;
+  }
+  .panda-loyalty-footer > p {
+    font-size: 10rem;
+  }
+  .panda-loyalty-footer > .wrapper-ic {
+    gap: 12rem;
+  }
+  .panda-loyalty-footer > .wrapper-ic img {
+    width: 24rem;
+    height: 24rem;
+  }
+}

@@ -1,0 +1,36 @@
+.panda-loyalty-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  z-index: 1;
+  padding: 18px 100px;
+}
+.panda-loyalty-header > img {
+  width: 54px;
+  height: 86px;
+  object-fit: contain;
+}
+.panda-loyalty-header > .item-menu-header {
+  display: flex;
+  gap: 100px;
+}
+.panda-loyalty-header > .item-menu-header p {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #212121;
+  cursor: pointer;
+}
+.panda-loyalty-header > .item-menu-header p.active {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+@media only screen and (max-width: 1024px) {
+  .panda-loyalty-header {
+    display: none;
+  }
+}
