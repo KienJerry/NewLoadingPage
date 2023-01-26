@@ -1,12 +1,24 @@
-.container-scroll-top {
-  background-color: orange;
-  padding: 10rem;
-  font-size: 24rem;
-  width: 50rem;
-  height: 50rem;
+#myBtn {
+  display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 90rem;
+  right: 30rem;
+  z-index: 99;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 10rem;
+  border-radius: 50%;
+  width: 32rem;
+  height: 32rem;
+  border: 1rem solid rgb(189, 189, 189);
+}
+
+.lottie-player{
+  position: fixed;
+  bottom: 10rem;
+  right: 20rem;
+  z-index: 99;
+  cursor: pointer;
 }

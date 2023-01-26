@@ -93,7 +93,7 @@
   text-align: center;
   color: #252525;
 }
-.box-card-offer > .card-body > .btn-register-offer {
+.box-card-offer > .card-body .btn-register-offer {
   border: 1rem solid #5a9b37;
   border-radius: 30rem;
   font-weight: 700;
@@ -102,7 +102,7 @@
   padding: 12rem 40rem;
   cursor: pointer;
 }
-.box-card-offer > .card-body > .btn-register-offer:hover {
+.box-card-offer > .card-body .btn-register-offer:hover {
   background: #5a9b37;
   border: 1rem solid #ffffff;
   border-radius: 30rem;
@@ -165,7 +165,7 @@
   .box-card-offer > .card-body .group-txt-card {
     font-size: 15rem;
   }
-  .box-card-offer > .card-body > .btn-register-offer {
+  .box-card-offer > .card-body .btn-register-offer {
     font-size: 16rem;
     padding: 6rem 34rem;
   }

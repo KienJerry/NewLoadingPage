@@ -145,7 +145,7 @@ window.smoothScroll = function (target) {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 830 && itemMenu) {
-    itemMenu.style.background = "#ffef86";
+    itemMenu.style.background = "white";
     itemMenu.style.padding = "6px 100px";
     itemMenu.style.maxHeight = "70px";
   } else {
@@ -164,3 +164,49 @@ menuItems.forEach(function (e) {
     e.classList.add("active");
   });
 });
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+
+// Get the button
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  console.log("first");
+  if (
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(topFunction);
+    window.scrollTo(0, c - c / 8);
+  }
+}
