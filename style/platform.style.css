@@ -82,6 +82,7 @@
   .panda-loyalty-platform > .group-plugin-platform {
     overflow-y: hidden;
     overflow-x: auto;
+    flex-wrap: wrap;
   }
   .box-plugin-platform h3 {
     font-size: 18rem;

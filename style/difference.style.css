@@ -160,7 +160,7 @@
 
 @media only screen and (max-width: 740px) {
   .panda-loyalty-difference {
-    padding: 20rem;
+    padding: 20rem 20rem 50rem 20rem;
   }
   .header-panda-loyalty-difference h2 {
     font-size: 20rem;

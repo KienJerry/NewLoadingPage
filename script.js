@@ -193,7 +193,6 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-  console.log("first");
   if (
     document.body.scrollTop > 800 ||
     document.documentElement.scrollTop > 800
@@ -210,3 +209,45 @@ function topFunction() {
     window.scrollTo(0, c - c / 8);
   }
 }
+
+const categoryTakeCare = document.querySelectorAll(".box-category-takecare");
+
+categoryTakeCare.forEach(function (e) {
+  e?.addEventListener("click", () => {
+    categoryTakeCare.forEach(function (element) {
+      element.classList.remove("active");
+    });
+    e.classList.add("active");
+  });
+});
+
+const takecare1 = document.getElementById("group-about-takecare");
+const takecare2 = document.getElementById("group-about-takecare2");
+const takecare3 = document.getElementById("group-about-takecare3");
+document.getElementById("boxCategoryTakeCare1").onclick = function () {
+  if (takecare1.style.display == "flex") {
+    return;
+  } else {
+    takecare1.style.display = "flex";
+    takecare2.style.display = "none";
+    takecare3.style.display = "none";
+  }
+};
+document.getElementById("boxCategoryTakeCare2").onclick = function () {
+  if (takecare2.style.display == "flex") {
+    return;
+  } else {
+    takecare1.style.display = "none";
+    takecare2.style.display = "flex";
+    takecare3.style.display = "none";
+  }
+};
+document.getElementById("boxCategoryTakeCare3").onclick = function () {
+  if (takecare3.style.display == "flex") {
+    return;
+  } else {
+    takecare1.style.display = "none";
+    takecare2.style.display = "none";
+    takecare3.style.display = "flex";
+  }
+};
