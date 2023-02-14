@@ -24,6 +24,8 @@
   padding: 32rem 0 67rem 0;
   display: flex;
   justify-content: space-evenly;
+  z-index: 99 !important;
+  position: relative;
 }
 .group-category-takecare .box-category-takecare {
   display: flex;
@@ -42,7 +44,7 @@
 .group-category-takecare .box-category-takecare.active {
   background: #f3da1d;
 }
-.group-category-takecare .box-category-takecare.active  img {
+.group-category-takecare .box-category-takecare.active img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
     hue-rotate(181deg) brightness(104%) contrast(101%);
 }
