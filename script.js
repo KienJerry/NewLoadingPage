@@ -157,6 +157,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 
 menuItems.forEach(function (e) {
   e?.addEventListener("click", () => {
+    console.log("first")
     smoothScroll(document.getElementById(e?.dataset.redirect));
     menuItems.forEach(function (element) {
       element.classList.remove("active");
@@ -191,6 +192,7 @@ function showSlides() {
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
   scrollFunction();
+  ActiveScroll();
 };
 function scrollFunction() {
   if (
@@ -251,3 +253,62 @@ document.getElementById("boxCategoryTakeCare3").onclick = function () {
     takecare3.style.display = "flex";
   }
 };
+
+function ActiveScroll() {
+  const panda_loyalty_caseStudy = document.querySelector(
+    ".panda-loyalty-caseStudy"
+  );
+  const panda_loyalty_benifit = document.querySelector(
+    ".panda-loyalty-benifit"
+  );
+  const panda_loyalty_offer = document.querySelector(".panda-loyalty-offer");
+  const panda_loyalty_contact = document.querySelector(
+    ".panda-loyalty-contact"
+  );
+  const id_difference = document.getElementById("id-difference");
+  const id_caseStudy = document.getElementById("id-caseStudy");
+  const id_IDbenefit = document.getElementById("id-IDbenefit");
+  const id_IDpriceList = document.getElementById("id-IDpriceList");
+  const id_IDcontact = document.getElementById("id-IDcontact");
+  const scrollTop = document.documentElement.scrollTop;
+  if (scrollTop <= panda_loyalty_caseStudy.offsetTop - 100) {
+    id_difference.classList.add("active");
+    id_caseStudy.classList.remove("active");
+    id_IDbenefit.classList.remove("active");
+    id_IDpriceList.classList.remove("active");
+    id_IDcontact.classList.remove("active");
+  } else if (
+    scrollTop > panda_loyalty_caseStudy.offsetTop - 100 &&
+    scrollTop <= panda_loyalty_benifit.offsetTop - 100
+  ) {
+    id_caseStudy.classList.add("active");
+    id_difference.classList.remove("active");
+    id_IDbenefit.classList.remove("active");
+    id_IDpriceList.classList.remove("active");
+    id_IDcontact.classList.remove("active");
+  } else if (
+    scrollTop > panda_loyalty_benifit.offsetTop - 100 &&
+    scrollTop <= panda_loyalty_offer.offsetTop - 100
+  ) {
+    id_IDbenefit.classList.add("active");
+    id_difference.classList.remove("active");
+    id_caseStudy.classList.remove("active");
+    id_IDpriceList.classList.remove("active");
+    id_IDcontact.classList.remove("active");
+  } else if (
+    scrollTop > panda_loyalty_offer.offsetTop - 100 &&
+    scrollTop <= panda_loyalty_contact.offsetTop - 100
+  ) {
+    id_IDpriceList.classList.add("active");
+    id_difference.classList.remove("active");
+    id_caseStudy.classList.remove("active");
+    id_IDbenefit.classList.remove("active");
+    id_IDcontact.classList.remove("active");
+  } else {
+    id_IDcontact.classList.add("active");
+    id_difference.classList.remove("active");
+    id_caseStudy.classList.remove("active");
+    id_IDbenefit.classList.remove("active");
+    id_IDpriceList.classList.remove("active");
+  }
+}

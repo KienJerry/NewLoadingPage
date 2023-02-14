@@ -37,11 +37,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  row-gap: 24rem;
+  row-gap: 8rem;
   font-weight: 500;
   font-size: 16rem;
   color: #575757;
-  margin-top: 32rem;
+  margin-top: 10rem;
 }
 .box-card-offer > .header-box-card-offter b {
   font-weight: 900;
@@ -74,8 +74,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  row-gap: 28rem;
-  margin-bottom: 41rem;
+  row-gap: 25rem;
+  margin-bottom: 20rem;
   padding: 0 34rem;
 }
 .box-card-offer > .card-body strong {
