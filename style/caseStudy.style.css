@@ -40,6 +40,31 @@
   opacity: 1;
   transform: translateX(0px);
 } */
+.panda-loyalty-caseStudy .form-group-loyalty-casestudy:hover button.sliderbtn {
+  display: flex;
+}
+button.prev-btns,
+button.next-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 24rem;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+button.prev-btns {
+  left: 50rem;
+}
+
+button.next-btns {
+  right: 50rem;
+}
 .image-case-study img {
   width: 100%;
   height: 100%;
@@ -105,6 +130,18 @@
   .content-case-study b {
     font-size: 36rem;
   }
+  button.prev-btns,
+  button.next-btns {
+    display: flex;
+    color: #606060;
+  }
+  button.prev-btns {
+    left: -40rem;
+  }
+  
+  button.next-btns {
+    right: -40rem;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -122,5 +159,11 @@
   }
   .group-loyalty-casestudy .image-case-study {
     height: 203rem;
+  }
+  button.prev-btns {
+    left: -20rem;
+  }
+  button.next-btns {
+    right: -20rem;
   }
 }

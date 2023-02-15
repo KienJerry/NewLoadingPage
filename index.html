@@ -262,6 +262,8 @@ Done (0)
             chắc đưa doanh nghiệp vững chắc tới chuyển đổi số thành công với các ưu điểm nổi bật</p>
         </div>
       </div>
+      <button class="prev-btns sliderbtn">&#10094;</button>
+      <button class="next-btns sliderbtn">&#10095;</button>
     </div>
     <div style="text-align:center">
       <span class="dot"></span>
@@ -588,5 +590,21 @@ Done (0)
 </body>
 <script src="./script.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 12,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".next-btns",
+      prevEl: ".prev-btns",
+    },
+  });
+</script>
 
 </html>

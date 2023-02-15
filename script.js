@@ -312,3 +312,23 @@ function ActiveScroll() {
     id_IDpriceList.classList.remove("active");
   }
 }
+
+
+// const sliderImages = document.querySelector(".form-group-loyalty-casestudy");
+// const prevButton = document.querySelector(".prev-btns");
+// const nextButton = document.querySelector(".next-btns");
+// let counter = 0;
+
+// nextButton.addEventListener("click", () => {
+//   if (counter < 2) {
+//     counter++;
+//     sliderImages.style.transform = `translateX(-${counter * 100}%)`;
+//   }
+// });
+
+// prevButton.addEventListener("click", () => {
+//   if (counter > 0) {
+//     counter--;
+//     sliderImages.style.transform = `translateX(-${counter * 100}%)`;
+//   }
+// });
